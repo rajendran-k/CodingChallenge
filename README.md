@@ -21,26 +21,7 @@ Diagram
 ![blank diagram](https://github.com/rajendran-k/CodingChallenge/assets/36255990/8d85f5eb-1a4d-49ff-a59d-e710188e89b9)
 
 
-
-
-Implementation
-├── main.tf                   // The primary entry point for terraform resources.
-├── vars.tf                   // It contain the declarations for variables.
-├── output.tf                 // It contain the declarations for outputs.
-├── backup.tf                 //It contains storage backup of tfstate
-├── Modules
-    ├── app
-    ├── dbserver
-    ├── networking
-    ├── storage
-├── Dev
-    ├── app
-    ├── dbserver
-    ├── networking
-├── QA
-    ├── app
-    ├── dbserver
-    ├── networking
+![impldiagram](https://github.com/rajendran-k/CodingChallenge/assets/36255990/9fedcc5c-7997-4275-9635-9e30ca148984)
 
 
 All the stacks are placed in the modules folder and the variables are stored under terraform.tfvars
