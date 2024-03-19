@@ -16,6 +16,11 @@ App virtual machine -> allow inbound traffic from the internet.
 The app can connect to the database and the database can connect to app but the database cannot connect to the web.
 TFstate is saved in the Storage account. So all backup will happen there.
 
+Diagram
+
+![blank diagram](https://github.com/rajendran-k/CodingChallenge/assets/36255990/8d85f5eb-1a4d-49ff-a59d-e710188e89b9)
+
+
 
 
 Implementation
