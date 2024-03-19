@@ -10,14 +10,16 @@ How to Install?
 https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
 Problem Statement
-Consist of 1 app server and 1 DB server
-App server will talk to DB.App will get request from outside from port 80
-App virtual machine -> allow inbound traffic from internet.
-App can connect to database and database can connect to app but database cannot connect to web.
-TFstate is saved in Storage account. So all backup will happen there.
+Consist of 2 app servers and 1 DB server and one load balancer
+The app server will talk to DB.App will get requests from outside from port 80
+App virtual machine -> allow inbound traffic from the internet.
+The app can connect to the database and the database can connect to app but the database cannot connect to the web.
+TFstate is saved in the Storage account. So all backup will happen there.
+
+
 
 Implementation
-├── main.tf                   // The primary entrypoint for terraform resources.
+├── main.tf                   // The primary entry point for terraform resources.
 ├── vars.tf                   // It contain the declarations for variables.
 ├── output.tf                 // It contain the declarations for outputs.
 ├── backup.tf                 //It contains storage backup of tfstate
@@ -36,7 +38,7 @@ Implementation
     ├── networking
 
 
-All the stacks are placed in the modules folder and the variable are stored under terraform.tfvars
+All the stacks are placed in the modules folder and the variables are stored under terraform.tfvars
 
 To run the code you need to append the variables in the terraform.tfvars
 
