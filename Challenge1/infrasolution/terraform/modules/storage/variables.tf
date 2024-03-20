@@ -1,7 +1,7 @@
 variable "group_name" {
-    type = string
+  type = string
 }
 
-variable "location" {  
+variable "location" {
   type = string
 }

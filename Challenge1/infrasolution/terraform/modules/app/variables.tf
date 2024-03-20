@@ -1,29 +1,40 @@
 variable "group_name" {
-    type = string
-}
-
-variable "location" {  
   type = string
 }
 
-variable "subnet_id" {  
+variable "vmname" {
+  type    = string
+  default = "vm"
+
+}
+
+variable "location" {
   type = string
 }
 
-variable "subnet_id" {  
-  type = string
+variable "vm_count" {
+  type    = number
+  default = 2
 }
-variable "public_ip" {  
+
+variable "subnet_id" {
   type = string
 }
 
-variable "password" {  
+variable "subnet_id" {
   type = string
-  default = "asdasdasdas"
+}
+variable "public_ip" {
+  type = string
+}
+
+variable "password" {
+  type      = string
+  default   = "asdasdasdas"
   sensitive = true
 }
-variable "size" {  
-  type = string
+
+variable "size" {
+  type    = string
   default = "Standard_F2"
-  
 }

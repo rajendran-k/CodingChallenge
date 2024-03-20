@@ -12,10 +12,10 @@ resource "azurerm_mssql_server" "db_server" {
 }
 
 resource "azurerm_mssql_database" "db" {
-  name                = var.db_name
-  server_id           = azurerm_mssql_server.db_server.id
-  collation           = "SQL_Latin1_General_CP1_CI_AS"
-  license_type        = var.license_type
-  max_size_gb         = var.max_size_gb
-  read_scale          = var.read_scale
+  name         = var.db_name
+  server_id    = azurerm_mssql_server.db_server.id
+  collation    = "SQL_Latin1_General_CP1_CI_AS"
+  license_type = var.license_type
+  max_size_gb  = var.max_size_gb
+  read_scale   = var.read_scale
 }
